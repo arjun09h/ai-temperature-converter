@@ -1,0 +1,42 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+display: flex;
+justify-content: center;
+background-color: hsl(30, 10%, 18%);
+color: white;
+width: 100%;
+
+}
+h6{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 70%);
+}
+#icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right:40px ;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#menu{
+    border-radius: 30%;
+    font-size:xx-small;
+    color: hsl(0, 0%, 70%);
+    background-color: hsl(0, 1%, 15%);
+    align-self:normal;
+    margin-right: 5px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer_section{
+width: 100%;
+} */

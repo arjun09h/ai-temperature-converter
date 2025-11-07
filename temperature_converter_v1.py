@@ -1,5 +1,6 @@
 from word2number import w2n
 import spacy
+import string
 
 nlp = spacy.load("en_core_web_sm")
 
@@ -62,7 +63,7 @@ class TemperatureConverter:
         """
         text = text.replace("°", " ")
         self.words = text.lower().split()
-        
+        self.words = [w.strip(string.punctuation) for w in self.words]
         self.value = self.value_finding()
         # Handle case where value_finding returns None
         if self.value is None:
@@ -167,7 +168,7 @@ class TemperatureConverter:
         # finding to temperature
         to_token_found = False
         for token in doc:
-            if token.lemma_ == "to":
+            if token.lemma_ in  ["to", "in", "into", "as"]:
                 to_token_found = True
                 continue
             if to_token_found and token.text in units:
